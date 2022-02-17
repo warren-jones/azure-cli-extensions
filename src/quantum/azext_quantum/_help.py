@@ -9,6 +9,21 @@ from knack.help_files import helps  # pylint: disable=unused-import
 helps['quantum'] = """
     type: group
     short-summary: Manage Azure Quantum Workspaces and submit jobs to Azure Quantum Providers.
+    examples:
+      - name: Submit the Q# program from the current folder and wait for the result.
+        text: |-
+            az quantum execute -g MyResourceGroup -w MyWorkspace -l MyLocation -t MyTarget
+      - name: Submit and wait for a Q# program from the current folder with job and program parameters.
+        text: |-
+            az quantum execute -g MyResourceGroup -w MyWorkspace -l MyLocation -t MyTarget \\
+                --job-params key1=value1 key2=value2 -- --n-qubits=3
+      - name: Submit the Q# program from the current folder and wait for the result.
+        text: |-
+            az quantum run -g MyResourceGroup -w MyWorkspace -l MyLocation -t MyTarget
+      - name: Submit and wait for a Q# program from the current folder with job and program parameters.
+        text: |-
+            az quantum run -g MyResourceGroup -w MyWorkspace -l MyLocation -t MyTarget \\
+                --job-params key1=value1 key2=value2 -- --n-qubits=3
 """
 
 helps['quantum execute'] = """
@@ -112,6 +127,16 @@ helps['quantum job cancel'] = """
 helps['quantum offerings'] = """
     type: group
     short-summary: Manage provider offerings for Azure Quantum.
+    examples:
+      - name: List offerings available in an Azure location.
+        text: |-
+            az quantum offerings list -l MyLocation
+      - name: Use a Provider Id and SKU from `az quantum offerings list` to review the terms.
+        text: |-
+            az quantum offerings show-terms -p MyProviderId -k MySKU -l MyLocation
+      - name: Once terms have been reviewed, accept the invoking this command.
+        text: |-
+            az quantum offerings accept-terms -p MyProviderId -k MySKU -l MyLocation
 """
 
 helps['quantum offerings list'] = """
