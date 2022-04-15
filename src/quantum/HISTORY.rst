@@ -3,6 +3,15 @@
 Release History
 ===============
 
+0.15.0
+++++++
+* [2022-04-dd] Version intended to work with QDK version v0.25.nnnnnn
+* Extended error message and added help examples for provider/SKU '-r' parameter.
+* Fixed 'az quantum job wait' command so you can set polling interval with '--max-poll-wait-secs' parameter.
+* Outputting job submission progress messages to stderr so stdout will only contain valid JSON by default.
+* Added 'Microsoft.AzureQuantum-' prefix to workspace creation deployment name.
+* Increased workspace creation timeout to 15 minutes.
+
 0.14.0
 ++++++
 * [2022-03-30] Version intended to work with QDK version v0.24.201332
