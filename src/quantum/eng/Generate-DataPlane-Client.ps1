@@ -39,9 +39,12 @@ Param (
     [string] $SwaggerTagVersion
 )
 
-$OutputFolder = Join-Path $PSScriptRoot "../azext_quantum/vendored_sdks/azure_quantum/"
+# $OutputFolder = Join-Path $PSScriptRoot "../azext_quantum/vendored_sdks/azure_quantum/"
+# $OutputFolder = Join-Path $PSScriptRoot "azext_quantum/vendored_sdks/azure_quantum/"
+$OutputFolder = "../azext_quantum/vendored_sdks/azure_quantum/"
 
-Write-Verbose "Output folder: $OutputFolder"
+# Write-Verbose "Output folder: $OutputFolder"
+Write-Host "Output folder: $OutputFolder"
 
 Write-Verbose "Deleting previous output folder contents"
 if (Test-Path $OutputFolder) {
