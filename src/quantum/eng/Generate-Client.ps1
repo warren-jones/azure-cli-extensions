@@ -52,7 +52,6 @@ if ([string]::IsNullOrEmpty($ClientToGenerate) -or ($ClientToGenerate -eq "data-
 {
     $AutoRestConfig = "$SwaggerRepoUrl/blob/$SwaggerRepoBranch/specification/quantum/data-plane/readme.md"
     $OutputFolder = "./azext_quantum/vendored_sdks/azure_quantum/"
-    # >>>>> Should this be "../azext_quantum/..."? <<<<<
 }
 else
 {
