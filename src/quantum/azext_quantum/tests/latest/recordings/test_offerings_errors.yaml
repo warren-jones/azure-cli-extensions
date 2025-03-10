@@ -23,9 +23,9 @@ interactions:
       content-length:
       - '0'
       date:
-      - Tue, 04 Mar 2025 22:51:02 GMT
+      - Mon, 10 Mar 2025 01:58:59 GMT
       expires:
-      - Tue, 04 Mar 2025 22:51:02 GMT
+      - Mon, 10 Mar 2025 01:58:59 GMT
       location:
       - https://azcliextensionsync.blob.core.windows.net/index1/index.json
       pragma:
@@ -65,9 +65,9 @@ interactions:
       content-length:
       - '0'
       date:
-      - Tue, 04 Mar 2025 22:51:05 GMT
+      - Mon, 10 Mar 2025 01:59:01 GMT
       expires:
-      - Tue, 04 Mar 2025 22:51:05 GMT
+      - Mon, 10 Mar 2025 01:59:01 GMT
       location:
       - https://azcliextensionsync.blob.core.windows.net/index1/index.json
       pragma:
@@ -107,9 +107,9 @@ interactions:
       content-length:
       - '0'
       date:
-      - Tue, 04 Mar 2025 22:51:07 GMT
+      - Mon, 10 Mar 2025 01:59:03 GMT
       expires:
-      - Tue, 04 Mar 2025 22:51:07 GMT
+      - Mon, 10 Mar 2025 01:59:03 GMT
       location:
       - https://azcliextensionsync.blob.core.windows.net/index1/index.json
       pragma:
